@@ -1,3 +1,5 @@
+// chong-copy.js
+
 // Thêm CSS để vô hiệu hóa chọn văn bản
 const style = document.createElement('style');
 style.textContent = `
@@ -8,7 +10,7 @@ style.textContent = `
         user-select: none;          /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
     }
 `;
-document.head.append(style);
+document.head.appendChild(style);
 
 // Vô hiệu hóa menu ngữ cảnh chuột phải
 document.addEventListener('contextmenu', function(e) {
