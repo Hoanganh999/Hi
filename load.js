@@ -1,0 +1,25 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var body = document.body;
+    var elemDiv = document.createElement('div');
+    elemDiv.setAttribute('id', 'gpmn-body-load');
+    elemDiv.innerHTML = `
+        <div class="bl-logo">
+            <div class="tank-wrap">
+                <div class="vn-sun"><img src="https://cdn.jsdelivr.net/gh/duyvinh09/30-04-1975@59c1018/img/vn-flag-full.gif" /></div>
+                <div class="tank-simu">
+                    <div class="wheels"><span></span><span></span><span></span><span></span><span></span></div>
+                    <div class="fence"></div>
+                    <div class="fence2"></div>
+                </div>
+                <div class="gate"></div>
+                <div class="gate2"></div>
+            </div>
+            
+        </div>
+    `;
+    document.body.appendChild(elemDiv);
+
+    setTimeout(function() {
+        document.getElementById('gpmn-body-load').style.display = 'none';
+    }, 3100);
+});
